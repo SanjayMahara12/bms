@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "KhSqLiZh/PmJtq4FZXf394E56og1fzlkQR0wqMmCCog=",
+  "Source": "bmsgateway",
+  "BasePath": "_content/bmsgateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

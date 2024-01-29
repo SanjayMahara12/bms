@@ -1,0 +1,11 @@
+/home/sanjaymahara/dotnetprojects/bmsweb/bmsgateway/bin/Release/net6.0/publish/bmsgateway
+/home/sanjaymahara/dotnetprojects/bmsweb/bmsgateway/bin/Release/net6.0/publish/appsettings.Development.json
+/home/sanjaymahara/dotnetprojects/bmsweb/bmsgateway/bin/Release/net6.0/publish/appsettings.json
+/home/sanjaymahara/dotnetprojects/bmsweb/bmsgateway/bin/Release/net6.0/publish/bmsgateway.dll
+/home/sanjaymahara/dotnetprojects/bmsweb/bmsgateway/bin/Release/net6.0/publish/bmsgateway.deps.json
+/home/sanjaymahara/dotnetprojects/bmsweb/bmsgateway/bin/Release/net6.0/publish/bmsgateway.runtimeconfig.json
+/home/sanjaymahara/dotnetprojects/bmsweb/bmsgateway/bin/Release/net6.0/publish/bmsgateway.pdb
+/home/sanjaymahara/dotnetprojects/bmsweb/bmsgateway/bin/Release/net6.0/publish/Microsoft.OpenApi.dll
+/home/sanjaymahara/dotnetprojects/bmsweb/bmsgateway/bin/Release/net6.0/publish/Swashbuckle.AspNetCore.Swagger.dll
+/home/sanjaymahara/dotnetprojects/bmsweb/bmsgateway/bin/Release/net6.0/publish/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/sanjaymahara/dotnetprojects/bmsweb/bmsgateway/bin/Release/net6.0/publish/Swashbuckle.AspNetCore.SwaggerUI.dll
