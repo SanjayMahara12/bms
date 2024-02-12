@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/sanjaymahara/dotnetprojects/bmss/bmsweb/bmsgateway/bmsgateway.csproj": {}
+    "/home/sanjaymahara/dotnetprojects/bms/bmsgateway/bmsgateway.csproj": {}
   },
   "projects": {
-    "/home/sanjaymahara/dotnetprojects/bmss/bmsweb/bmsgateway/bmsgateway.csproj": {
+    "/home/sanjaymahara/dotnetprojects/bms/bmsgateway/bmsgateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/sanjaymahara/dotnetprojects/bmss/bmsweb/bmsgateway/bmsgateway.csproj",
+        "projectUniqueName": "/home/sanjaymahara/dotnetprojects/bms/bmsgateway/bmsgateway.csproj",
         "projectName": "bmsgateway",
-        "projectPath": "/home/sanjaymahara/dotnetprojects/bmss/bmsweb/bmsgateway/bmsgateway.csproj",
+        "projectPath": "/home/sanjaymahara/dotnetprojects/bms/bmsgateway/bmsgateway.csproj",
         "packagesPath": "/home/sanjaymahara/.nuget/packages/",
-        "outputPath": "/home/sanjaymahara/dotnetprojects/bmss/bmsweb/bmsgateway/obj/",
+        "outputPath": "/home/sanjaymahara/dotnetprojects/bms/bmsgateway/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/sanjaymahara/.nuget/NuGet/NuGet.Config"
@@ -47,6 +47,10 @@
               "version": "[12.2.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.Extensions.Http.Polly": {
               "target": "Package",
               "version": "[8.0.1, )"
             },

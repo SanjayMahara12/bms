@@ -4,6 +4,7 @@ using bmsgateway.models;
 using bmsgateway.repository;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Polly;
 
 namespace bmsgateway.Controllers;
 
@@ -12,23 +13,29 @@ namespace bmsgateway.Controllers;
 public class EmployeesController : Controller
 {
     private readonly IMediator _mediator;
-    public EmployeesController(IMediator mediator)
+    public readonly IBmsPolicymaker _bmsPolicyMaker;
+
+    private readonly IAsyncPolicy<IActionResult> _fallbackPolicy;
+    public EmployeesController(IMediator mediator,IBmsPolicymaker bmsPolicyMaker)
     {
         this._mediator = mediator;
+        this._bmsPolicyMaker=bmsPolicyMaker;
+        _fallbackPolicy=this._bmsPolicyMaker.GetAsyncFallbakPolicy();
     }
 
     [HttpGet]
     public async Task<IActionResult> Get()
     {
-        var result = await _mediator.Send(new GetEmployeeListQuery());
+        var result = await  _mediator.Send(new GetEmployeeListQuery());
         return Ok(result);
     }
 
     [HttpGet("{id:int}")]
     public async Task<IActionResult> GetEmployee(int id)
     {
-        var result = await _mediator.Send(new GetEmployeeByIdQuery() { Id = id });
-        return Ok(result);
+        return await _fallbackPolicy.ExecuteAsync(async () => Ok(await _mediator.Send(new GetEmployeeByIdQuery() { Id = id })));
+        //var result = await _mediator.Send(new GetEmployeeByIdQuery() { Id = id });
+        //return Ok(result);
     }
 
     [HttpPost]

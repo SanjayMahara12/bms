@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("bmsgateway")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4afb5c515196375af7b37fe7e5ec4480cbb2ff06")]
 [assembly: System.Reflection.AssemblyProductAttribute("bmsgateway")]
 [assembly: System.Reflection.AssemblyTitleAttribute("bmsgateway")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
